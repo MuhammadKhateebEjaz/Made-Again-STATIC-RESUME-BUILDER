@@ -1,0 +1,184 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  font-size: 16px; /* Or 1rem */
+}
+
+/* Container Styles */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Collapsible Section Styles */
+.collapsible {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.collapsible-header {
+  padding: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+}
+
+.collapsible-header:hover {
+  background-color: #0056b3;
+}
+
+.collapsible-content {
+  display: none;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+.collapsible-content ul {
+  list-style: none;
+}
+
+.collapsible-content li {
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Form (Initially hidden) */
+.hidden {
+  display: none;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flex Item */
+.item {
+  flex: 1 1 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .collapsible-header {
+    font-size: 1.4rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    font-size: 24px;
+  }
+  .item {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    font-size: 28px;
+  }
+  .item {
+    flex: 1 1 30%;
+  }
+}
+
+
+
+
+
+
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  font-size: 1rem;
+  border-top: 3px solid #0056b3; /* Top border for design */
+}
+
+footer .highlight {
+  font-weight: bold;
+  color: #ffcc00; /* Highlighted color for "Khateeb" */
+  font-style: italic; /* Italic style */
+}
+
+footer p {
+  margin: 0;
+}
